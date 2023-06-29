@@ -26,6 +26,6 @@ func main() {
 
 func must(action string, err error) {
 	if err != nil {
-		panic("failed to " + action + ":" + err.Error())
+		panic("failed to " + action + ": " + err.Error())
 	}
 }
