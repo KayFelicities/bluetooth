@@ -17,7 +17,7 @@ import (
 	"golang.org/x/text/cases"
 	"golang.org/x/text/language"
 
-	"tinygo.org/x/bluetooth"
+	"github.com/KayFelicities/bluetooth"
 )
 
 type Characteristic struct {
