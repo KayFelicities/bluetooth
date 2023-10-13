@@ -6,12 +6,12 @@ import (
 	"syscall"
 	"unsafe"
 
+	"github.com/KayFelicities/winrt-go"
+	"github.com/KayFelicities/winrt-go/windows/devices/bluetooth"
+	"github.com/KayFelicities/winrt-go/windows/devices/bluetooth/genericattributeprofile"
+	"github.com/KayFelicities/winrt-go/windows/foundation"
+	"github.com/KayFelicities/winrt-go/windows/storage/streams"
 	"github.com/go-ole/go-ole"
-	"github.com/saltosystems/winrt-go"
-	"github.com/saltosystems/winrt-go/windows/devices/bluetooth"
-	"github.com/saltosystems/winrt-go/windows/devices/bluetooth/genericattributeprofile"
-	"github.com/saltosystems/winrt-go/windows/foundation"
-	"github.com/saltosystems/winrt-go/windows/storage/streams"
 )
 
 var (
@@ -366,7 +366,7 @@ func (c *DeviceCharacteristic) Read(data []byte) (int, error) {
 // changes.
 func (c DeviceCharacteristic) EnableNotifications(callback func(buf []byte)) error {
 	if (c.properties&genericattributeprofile.GattCharacteristicPropertiesNotify == 0) &&
-	   (c.properties&genericattributeprofile.GattCharacteristicPropertiesIndicate == 0) {
+		(c.properties&genericattributeprofile.GattCharacteristicPropertiesIndicate == 0) {
 		return errNoNotify
 	}
 

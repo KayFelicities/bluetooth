@@ -4,9 +4,9 @@ import (
 	"fmt"
 
 	"github.com/go-ole/go-ole"
-	"github.com/saltosystems/winrt-go"
-	"github.com/saltosystems/winrt-go/windows/devices/bluetooth/advertisement"
-	"github.com/saltosystems/winrt-go/windows/foundation"
+	"github.com/KayFelicities/winrt-go"
+	"github.com/KayFelicities/winrt-go/windows/devices/bluetooth/advertisement"
+	"github.com/KayFelicities/winrt-go/windows/foundation"
 )
 
 type Adapter struct {

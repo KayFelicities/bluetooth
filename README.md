@@ -159,7 +159,7 @@ There is a known issue with iTerm2 and the Bluetooth package. If you are getting
 
 ## Windows
 
-Go Bluetooth support for Windows uses the [WinRT Bluetooth](https://docs.microsoft.com/en-us/uwp/api/windows.devices.bluetooth.bluetoothadapter?view=winrt-19041) interfaces by way of the https://github.com/saltosystems/winrt-go package.
+Go Bluetooth support for Windows uses the [WinRT Bluetooth](https://docs.microsoft.com/en-us/uwp/api/windows.devices.bluetooth.bluetoothadapter?view=winrt-19041) interfaces by way of the https://github.com/KayFelicities/winrt-go package.
 
 The Windows support only can only act as a BLE Central at this time, with some additional development work needed for full functionality.
 
